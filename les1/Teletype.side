@@ -1,0 +1,89 @@
+{
+  "id": "f61317a1-002d-420d-8a6d-01f469e757d3",
+  "version": "2.0",
+  "name": "Teletype",
+  "url": "https://teletype.in/login",
+  "tests": [{
+    "id": "19a5e17b-d985-4cc8-843b-5407bd728fca",
+    "name": "Login&logout",
+    "commands": [{
+      "id": "ff2920a7-f997-4951-8e0e-c8953433f6c7",
+      "comment": "",
+      "command": "open",
+      "target": "https://teletype.in/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c787e705-f5b1-4fe8-8cca-782a39c9d398",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1504x795",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98622dda-f09c-4bd1-ad6c-7de3ff82064e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=email",
+      "targets": [],
+      "value": "foriphone186@gmail.com"
+    }, {
+      "id": "a291f492-26a4-49c2-842b-d27bef4f818c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [],
+      "value": "GB123!gb123"
+    }, {
+      "id": "3c79aa0b-6696-4db5-8159-96ac078cf4c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button__text",
+      "targets": [
+        ["css=.button__text", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div/form/div[3]/button/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a898188-e6cc-4eed-aa88-052c728116b8",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@title='Аккаунт']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e90ec2e-1af2-45a8-8fb7-5275a303d767",
+      "comment": "",
+      "command": "click",
+      "target": "//div[@class='accountPopup__list']//div[1]//div[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43714e9b-63bf-441e-883c-2b2f928e2aff",
+      "comment": "",
+      "command": "click",
+      "target": "//*[.='Выйти из @gbtester']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24d8efbe-aefd-4769-9361-05a25692b127",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "//*[@class='landing__header_slogan']",
+      "targets": [],
+      "value": "5000"
+    }]
+  }],
+  "suites": [{
+    "id": "de8e5ebd-d734-465f-9fd4-25add2395908",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["19a5e17b-d985-4cc8-843b-5407bd728fca"]
+  }],
+  "urls": ["https://teletype.in/login"],
+  "plugins": []
+}
